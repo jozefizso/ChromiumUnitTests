@@ -30,6 +30,13 @@ cd ChromiumTests64\bin\Debug
 nunit3-console.exe --inprocess --domain=None .\ChromiumTests64.dll
 ```
 
+To run tests using MS Test, use the **vstest.console.exe** application from
+_Visual Studio 2019 Developer Prompt_. (Running tests using MS Test is broken for now)
+
+```cmd
+vstest.console.exe ChromiumTests64.dll /Settings:DisableAppDomain.runsettings
+```
+
 ## License
 
 Licensed under [MIT License](LICENSE.txt).
